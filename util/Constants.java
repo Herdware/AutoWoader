@@ -3,6 +3,8 @@ package com.delimiter.rsbot.autowoader.util;
 import org.powerbot.script.Area;
 import org.powerbot.script.Tile;
 
+import java.awt.*;
+
 public class Constants {
     // Status
     public enum Status
@@ -244,4 +246,13 @@ public class Constants {
             new Tile(3093, 3252, 1),
             new Tile(3093, 3253, 1)
     };
+
+    // GUI
+    public static final Color BLACK = new Color(0, 0, 0, 200);
+    public static final Color WHITE = new Color(255, 255, 255);
+    public static final Font FONT_HEADER = new Font("SansSerif", Font.BOLD, 16);
+    public static final Font FONT_SUBHEADER = new Font("SansSerif", Font.ITALIC, 12);
+    public static final Font FONT_STATS = new Font("SansSerif", Font.PLAIN, 13);
+    public static final Font FONT_ITEMS = new Font("SansSerif", Font.PLAIN, 12);
+
 }

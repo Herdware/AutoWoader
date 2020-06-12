@@ -89,23 +89,23 @@ public class AutoWoader extends PollingScript<ClientContext> implements PaintLis
         String woadPerHourString = woadPerHour + "";
         String blueDyePerHourString = blueDyePerHour + "";
 
-        graphics.setColor(new Color(0, 0, 0, 200));
+        graphics.setColor(Constants.BLACK);
         graphics.fillRect(0, 0, 320, 90);
 
-        graphics.setColor(new Color(255, 255, 255));
+        graphics.setColor(Constants.WHITE);
         graphics.drawRect(0, 0, 320, 90);
 
-        graphics.setFont(new Font("SansSerif", Font.BOLD, 16));
+        graphics.setFont(Constants.FONT_HEADER);
         graphics.drawString("AutoWoader", 10, 20);
-        graphics.setFont(new Font("SansSerif", Font.ITALIC, 12));
+        graphics.setFont(Constants.FONT_SUBHEADER);
         graphics.drawString("By Delimiter", 10, 35);
-        graphics.setFont(new Font("SansSerif", Font.PLAIN, 13));
+        graphics.setFont(Constants.FONT_STATS);
 
         graphics.drawString("Runtime: " + formatTime(super.getRuntime()),10,60);
 
         graphics.drawString("Status: "+status, 10, 80);
 
-        graphics.setFont(new Font("SansSerif", Font.PLAIN, 12));
+        graphics.setFont(Constants.FONT_ITEMS);
         graphics.setColor(Color.yellow);
         graphics.drawString("Woads: " + woadLeavesBought,220,20);
 
